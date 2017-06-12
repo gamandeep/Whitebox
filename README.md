@@ -6,17 +6,29 @@ Select any option from the home screen to find basic functionalities in the push
 Options built right now : 
 
 Silent button/Mute button
+
 Audio jack
+
 Volume buttons
+
 Brightness
+
 Battery status/charge values
+
 Device motion including Accelerometer, Gyroscope
+
 Microphone
+
 Location
+
 Touch Id
+
 Camera
+
 Proximity
+
 Screenshot 
+
 Vibrate
 
 PRs welcome to add new sensors, buttons, etc. Also send fixes if any.
