@@ -115,9 +115,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             break
             
         case "Screenshot":
-//            let vc = self.storyboard?.instantiateViewController(withIdentifier: "MicrophoneViewControllerID")
-//            vc?.title = title
-//            self.navigationController?.pushViewController(vc!, animated: true)
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "ScreenshotViewControllerID")
+            self.navigationController?.pushViewController(vc!, animated: true)
             break
             
         case "Vibrate":

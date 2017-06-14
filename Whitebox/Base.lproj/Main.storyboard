@@ -351,7 +351,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u7M-Na-qzx">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Proximity" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u7M-Na-qzx">
                                 <rect key="frame" x="16" y="70" width="343" height="48"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
                                 <nil key="textColor"/>
@@ -371,14 +371,56 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r5X-Rj-KuJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6118" y="139"/>
+            <point key="canvasLocation" x="6753" y="139"/>
+        </scene>
+        <!--Screenshot-->
+        <scene sceneID="bGp-ZS-xYd">
+            <objects>
+                <viewController storyboardIdentifier="ScreenshotViewControllerID" title="Screenshot" id="3CT-g3-dFe" customClass="ScreenshotViewController" customModule="Whitebox" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0nC-54-Ubw"/>
+                        <viewControllerLayoutGuide type="bottom" id="VoO-1m-CwF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gvi-Hm-7SK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take Screenshot" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vIM-GT-R4B">
+                                <rect key="frame" x="16" y="70" width="343" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DXf-pY-fR5">
+                                <rect key="frame" x="20" y="134" width="335" height="513"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vIM-GT-R4B" firstAttribute="leading" secondItem="Gvi-Hm-7SK" secondAttribute="leading" constant="16" id="62A-nF-ESc"/>
+                            <constraint firstItem="VoO-1m-CwF" firstAttribute="top" secondItem="DXf-pY-fR5" secondAttribute="bottom" constant="20" id="QfY-AE-KUG"/>
+                            <constraint firstItem="DXf-pY-fR5" firstAttribute="top" secondItem="vIM-GT-R4B" secondAttribute="bottom" constant="16" id="SOI-Ku-B3V"/>
+                            <constraint firstItem="DXf-pY-fR5" firstAttribute="leading" secondItem="Gvi-Hm-7SK" secondAttribute="leading" constant="20" id="TvH-eA-IMs"/>
+                            <constraint firstAttribute="trailing" secondItem="DXf-pY-fR5" secondAttribute="trailing" constant="20" id="Z7F-ZF-9Fp"/>
+                            <constraint firstItem="vIM-GT-R4B" firstAttribute="top" secondItem="0nC-54-Ubw" secondAttribute="bottom" constant="50" id="Ztb-pt-2K8"/>
+                            <constraint firstAttribute="trailing" secondItem="vIM-GT-R4B" secondAttribute="trailing" constant="16" id="hGn-kG-XKr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="_imageView" destination="DXf-pY-fR5" id="wCG-8a-SpR"/>
+                        <outlet property="_label" destination="vIM-GT-R4B" id="c8i-aM-hOZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cNd-fh-qVJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7384.8000000000002" y="138.98050974512745"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="alp-Eh-YpA">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="63j-Yt-tjU" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="bWB-Mo-dID">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bWB-Mo-dID">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

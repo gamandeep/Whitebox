@@ -24,6 +24,7 @@
 		CE5BD2191EEDB8A10010DBBD /* MicrophoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5BD2181EEDB8A10010DBBD /* MicrophoneViewController.swift */; };
 		CE5BD21B1EEDC34C0010DBBD /* TouchIDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5BD21A1EEDC34C0010DBBD /* TouchIDViewController.swift */; };
 		CE5BD21D1EEDC9A00010DBBD /* ProximityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5BD21C1EEDC9A00010DBBD /* ProximityViewController.swift */; };
+		CE9E9B9F1EF1130C00299B47 /* ScreenshotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E9B9E1EF1130C00299B47 /* ScreenshotViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		CE5BD2181EEDB8A10010DBBD /* MicrophoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicrophoneViewController.swift; sourceTree = "<group>"; };
 		CE5BD21A1EEDC34C0010DBBD /* TouchIDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchIDViewController.swift; sourceTree = "<group>"; };
 		CE5BD21C1EEDC9A00010DBBD /* ProximityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProximityViewController.swift; sourceTree = "<group>"; };
+		CE9E9B9E1EF1130C00299B47 /* ScreenshotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenshotViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				CE5BD2181EEDB8A10010DBBD /* MicrophoneViewController.swift */,
 				CE5BD21A1EEDC34C0010DBBD /* TouchIDViewController.swift */,
 				CE5BD21C1EEDC9A00010DBBD /* ProximityViewController.swift */,
+				CE9E9B9E1EF1130C00299B47 /* ScreenshotViewController.swift */,
 			);
 			path = Whitebox;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				CE5BD21B1EEDC34C0010DBBD /* TouchIDViewController.swift in Sources */,
 				CE5BD20F1EEDA1150010DBBD /* VolumeViewController.swift in Sources */,
 				CE5BD2111EEDA4FB0010DBBD /* BrightnessViewController.swift in Sources */,
+				CE9E9B9F1EF1130C00299B47 /* ScreenshotViewController.swift in Sources */,
 				CE5BD2191EEDB8A10010DBBD /* MicrophoneViewController.swift in Sources */,
 				CE5BD2091EED8E7F0010DBBD /* SharkfoodMuteSwitchDetector.m in Sources */,
 				CE5BD21D1EEDC9A00010DBBD /* ProximityViewController.swift in Sources */,
@@ -360,6 +364,7 @@
 				CE5BD2011EED793A0010DBBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

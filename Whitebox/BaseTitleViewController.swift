@@ -11,7 +11,8 @@ import UIKit
 class BaseTitleViewController: UIViewController {
 
     @IBOutlet weak var _label: UILabel!
-    
+    @IBOutlet weak var _imageView: UIImageView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,6 +31,12 @@ class BaseTitleViewController: UIViewController {
     func setText (_ text: String, with duration: Double) {
         UIView.transition(with: self._label, duration: duration, options: UIViewAnimationOptions.transitionCrossDissolve, animations: {
             self._label.text = text
+        }, completion: nil)
+    }
+    
+    func setImage (_ image: UIImage) {
+        UIView.transition(with: self._label, duration: 1.0, options: UIViewAnimationOptions.transitionCrossDissolve, animations: {
+            self._imageView.image = image
         }, completion: nil)
     }
 
